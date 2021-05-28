@@ -27,9 +27,12 @@ public class Slot : MonoBehaviour, IDropHandler
         var itemPresenter = itemGameObject.GetComponent<ItemPresenter>();
         if (itemPresenter != null)
         {
-            Debug.Log("Item presenter: " + itemPresenter.name + " " + itemPresenter.Image);
-            Image.sprite = itemPresenter.Item.Icon;
-            ItemName.text = itemPresenter.Item.name;
+            Debug.Log("[Slot] #" + SlotNumber + " Item dropped " + itemPresenter.name + " " + itemPresenter.Image);
+            var item = itemPresenter.Item;
+            Image.sprite = item.Icon;
+            ItemName.text = item.name;
+            
+            Crafting.Instance.AddItem(item, SlotNumber);
         }
         
         

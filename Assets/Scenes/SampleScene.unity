@@ -609,10 +609,10 @@ RectTransform:
   m_Father: {fileID: 494966941}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4.1536865, y: 281.6}
-  m_SizeDelta: {x: -145.63, y: -610.81}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 4.1519775, y: 281.6}
+  m_SizeDelta: {x: 507.37, y: 163.20001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &871448084
 MonoBehaviour:
@@ -736,6 +736,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1129809184}
+  - component: {fileID: 1129809185}
   m_Layer: 0
   m_Name: Crafting
   m_TagString: Untagged
@@ -757,6 +758,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1129809185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129809183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52cc6fdc74d5574d8f05b291635ae25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item1: {fileID: 0}
+  Item2: {fileID: 0}
 --- !u!1 &1197928683
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,7 +830,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1263776519735269644, guid: 77de2b0088af26646be34d09ab13783f, type: 3}
       propertyPath: SlotNumber
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5903379082349063918, guid: 77de2b0088af26646be34d09ab13783f, type: 3}
       propertyPath: m_Pivot.x
@@ -1193,6 +1208,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 871448083}
     m_Modifications:
+    - target: {fileID: 1263776519735269644, guid: 77de2b0088af26646be34d09ab13783f, type: 3}
+      propertyPath: SlotNumber
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5903379082349063918, guid: 77de2b0088af26646be34d09ab13783f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

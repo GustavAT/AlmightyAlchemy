@@ -38,10 +38,11 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    private void AddItem(Item item, bool isStartItem)
+    public void AddItem(Item item, bool isStartItem)
     {
+        item.New = !isStartItem;
         AllItems.Add(item);
-        
+
         // Display discovery message if a crafted item is added
         if (!isStartItem)
         {

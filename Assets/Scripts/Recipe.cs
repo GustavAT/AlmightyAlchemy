@@ -1,18 +1,21 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Recipe : MonoBehaviour
+[CreateAssetMenu(fileName = "New Recipe", menuName = "Recipe")]
+public class Recipe : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    public ItemPair[] Inputs;
+    [SerializeField]
+    public List<Item> Result;
 
-    // Update is called once per frame
-    void Update()
+    [System.Serializable]
+    public class ItemPair
     {
-        
+        [SerializeField]
+        public Item Input1;
+        [SerializeField]
+        public Item Input2;
     }
 }
