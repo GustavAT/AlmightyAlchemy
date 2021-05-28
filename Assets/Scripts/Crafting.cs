@@ -72,9 +72,10 @@ public class Crafting : MonoBehaviour
         foreach (var newItem in newItems)
         {
             Inventory.Instance.AddItem(newItem, false);
+            Discovery.Instance.AddItem(newItem);
         }
-
-        // TODO: discoveries
+        
+        Discovery.Instance.ShowNextDiscovery();
     }
 
     private List<Item> GetMatches()
