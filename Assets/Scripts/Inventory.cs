@@ -43,14 +43,7 @@ public class Inventory : MonoBehaviour
         item.New = !isStartItem;
         AllItems.Add(item);
 
-        // Display discovery message if a crafted item is added
-        if (!isStartItem)
-        {
-            // TODO
-            Debug.Log("Item crafted");
-        }
-        
-        Debug.Log("Item added " + item.name);
+        Debug.Log("[Inventory] Item added " + item.name);
         
         // Instantiate game object
         var itemGameObject = Instantiate(ItemPrefab, InventoryGrid);

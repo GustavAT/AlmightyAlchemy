@@ -1,9 +1,6 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class Crafting : MonoBehaviour
 {
@@ -57,14 +54,26 @@ public class Crafting : MonoBehaviour
         var inventory = Inventory.Instance.AllItems;
         var matches = GetMatches();
 
+        // Add crafted items to results grid
+        Results.Instance.AddItems(matches);
+        
+        var newItems = new List<Item>();
         foreach (var item in matches)
         {
             if (!inventory.Contains(item))
             {
-                Inventory.Instance.AddItem(item, false);
+                newItems.Add(item);
             }
         }
         
+        Debug.Log("[Crafting] Crafted " + matches.Count + " (New: " + newItems.Count + ")");
+
+        // Add new items to inventory
+        foreach (var newItem in newItems)
+        {
+            Inventory.Instance.AddItem(newItem, false);
+        }
+
         // TODO: discoveries
     }
 
@@ -78,7 +87,6 @@ public class Crafting : MonoBehaviour
                 if (inputs.Input1 == Item1 && inputs.Input2 == Item2 ||
                     inputs.Input2 == Item1 && inputs.Input1 == Item2)
                 {
-                    Debug.Log("[Crafting] Item(s) crafted " + recipe.Result);
                     crafted.AddRange(recipe.Result);
                 }
             }

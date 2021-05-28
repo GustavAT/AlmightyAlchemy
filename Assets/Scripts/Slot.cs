@@ -34,8 +34,5 @@ public class Slot : MonoBehaviour, IDropHandler
             
             Crafting.Instance.AddItem(item, SlotNumber);
         }
-        
-        
-        Debug.Log("Drop" + gameObject);
     }
 }
