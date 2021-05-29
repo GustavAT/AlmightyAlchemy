@@ -441,7 +441,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e3b4daa14afce134bb0358e70a558246, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d68db12a6fdb5c740b7657448ec0d057, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -620,7 +620,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -160}
-  m_SizeDelta: {x: 400, y: 100}
+  m_SizeDelta: {x: 821.8027, y: 153.5992}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6572143608220678886
 CanvasRenderer:
@@ -650,7 +650,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' Quote'
+  m_text: "Rice main carbohydrate is starch, which is composed of amylose and amylopectin.
+    The rice grain constitutes 12% water, 75%\u201380% starch and only 7% protein
+    with a full complement of amino acids."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e56f761fd4d65d44aae50be08819fd81, type: 2}
   m_sharedMaterial: {fileID: 971867715138553378, guid: e56f761fd4d65d44aae50be08819fd81, type: 2}
@@ -784,10 +786,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Item
+  m_text: Rice
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 17fabd1aeafefbb499e34aaf481500a5, type: 2}
-  m_sharedMaterial: {fileID: 971867715138553378, guid: 17fabd1aeafefbb499e34aaf481500a5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e56f761fd4d65d44aae50be08819fd81, type: 2}
+  m_sharedMaterial: {fileID: 971867715138553378, guid: e56f761fd4d65d44aae50be08819fd81, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
