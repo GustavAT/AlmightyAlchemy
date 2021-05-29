@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: mountain
   m_EditorClassIdentifier: 
   Inputs:
-  - Input1: {fileID: 11400000, guid: b40ffa92d636ed74bb85c947705158f0, type: 2}
-    Input2: {fileID: 11400000, guid: 7eefa02b1eb33d34a8edd0024d1d1216, type: 2}
+  - Input1: {fileID: 11400000, guid: a575dd4e323fa974d95a8ff13ae40ee3, type: 2}
+    Input2: {fileID: 11400000, guid: a575dd4e323fa974d95a8ff13ae40ee3, type: 2}
   Result:
   - {fileID: 11400000, guid: d24623a4d966f2a4881f4ef05ee244de, type: 2}

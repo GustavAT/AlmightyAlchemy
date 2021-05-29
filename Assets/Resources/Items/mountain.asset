@@ -16,4 +16,4 @@ MonoBehaviour:
   Quote: lorem ipsum
   Icon: {fileID: 21300000, guid: 596704f8d3092d5438c4ccade78ac16f, type: 3}
   CustomColor: {r: 0.54901963, g: 0.7294118, b: 0.32156864, a: 1}
-  New: 1
+  New: 0
