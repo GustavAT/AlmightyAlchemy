@@ -8,12 +8,6 @@ using UnityEngine;
 
 public class SaveManager : MonoBehaviour
 {
-    private void Start()
-    {
-        Debug.Log("Awake SaveManager");
-        //LoadGame();
-    }
-
     private Save CreateSaveGameObject()
     {
         Save save = new Save();
@@ -22,7 +16,6 @@ public class SaveManager : MonoBehaviour
         foreach (var item in Inventory.Instance.AllItems.Distinct())
         {
             itemNames.Add(item.name);
-            Debug.Log("Saved " + item.name);
         }
         save.unlockedItems = itemNames;
 
@@ -64,7 +57,6 @@ public class SaveManager : MonoBehaviour
 
                 foreach (var savedItemName in save.unlockedItems)
                 {
-                    Debug.Log("Trying to load " + savedItemName);
                     foreach (var item in allItems)
                     {
                         if (item.name == savedItemName)
@@ -73,8 +65,6 @@ public class SaveManager : MonoBehaviour
                             {
                                 loadedItems.Add(item);
                             }
-                            
-                            Debug.Log("Loaded " + item.name);
                         }
                     }
                 }
@@ -84,12 +74,13 @@ public class SaveManager : MonoBehaviour
             catch (Exception e)
             {
                 Debug.LogError("Invalid game save \n" + e.Message);
+                // TODO notify the user :(
             }
-            
         }
         else
         {
             Debug.Log("No game saved!");
+            // TODO maybe welcome screen or something idk
         }
 
         return loadedItems;
