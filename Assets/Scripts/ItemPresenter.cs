@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -17,6 +18,11 @@ public class ItemPresenter : MonoBehaviour
     public TextMeshProUGUI NameText;
 
     /// <summary>
+    /// Badge for new items
+    /// </summary>
+    public GameObject NewBadge;
+
+    /// <summary>
     /// Item
     /// </summary>
     public Item Item;
@@ -26,5 +32,10 @@ public class ItemPresenter : MonoBehaviour
         Item = item;
         Image.sprite = item.Icon;
         NameText.text = item.name;
+    }
+
+    public void UpdateBadge()
+    {
+        NewBadge.SetActive(Item.New);
     }
 }

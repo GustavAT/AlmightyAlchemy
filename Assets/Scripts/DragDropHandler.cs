@@ -12,6 +12,11 @@ public class DragDropHandler : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     public static GameObject GetItemBeingDragged() => _itemBeingDragged;
 
     /// <summary>
+    /// The item's animator
+    /// </summary>
+    public Animator ItemAnimator;
+
+    /// <summary>
     /// Element covering the entire UI canvas
     /// </summary>
     private Transform _globalDragParent;
@@ -20,7 +25,9 @@ public class DragDropHandler : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     /// Canvas group used to enable and disable interactions
     /// </summary>
     private CanvasGroup _canvasGroup;
-    
+
+    private ItemPresenter _itemPresenter;
+
     /// <summary>
     /// Initial drag position.
     /// </summary>
@@ -31,6 +38,9 @@ public class DragDropHandler : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     /// </summary>
     private Transform _startParent;
 
+    private static readonly int IsDragging = Animator.StringToHash("IsDragging");
+    private static readonly int IsNew = Animator.StringToHash("IsNew");
+
     private void Start()
     {
         _globalDragParent = GameObject.FindGameObjectWithTag("GlobalDragParent").transform;
@@ -39,6 +49,7 @@ public class DragDropHandler : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     private void Awake()
     {
         _canvasGroup = GetComponent<CanvasGroup>();
+        _itemPresenter = GetComponent<ItemPresenter>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -51,6 +62,8 @@ public class DragDropHandler : MonoBehaviour, IBeginDragHandler, IEndDragHandler
         _canvasGroup.alpha = 0.8f;
         
         transform.SetParent(_globalDragParent);
+        
+        StartDraggingAnimation();
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -67,5 +80,26 @@ public class DragDropHandler : MonoBehaviour, IBeginDragHandler, IEndDragHandler
         _canvasGroup.alpha = 1f;
         
         transform.SetParent(_startParent);
+        
+        StopDraggingAnimation();
+    }
+
+    private void StartDraggingAnimation()
+    {
+        ItemAnimator.SetBool(IsDragging, true);
+        ItemAnimator.SetBool(IsNew, false);
+        
+        _itemPresenter.Item.New = false;
+        _itemPresenter.UpdateBadge();
+    }
+
+    private void StopDraggingAnimation()
+    {
+        ItemAnimator.SetBool(IsDragging, false);
+    }
+
+    public void StartIsNewAnimation()
+    {
+        ItemAnimator.SetBool(IsNew, true);
     }
 }
