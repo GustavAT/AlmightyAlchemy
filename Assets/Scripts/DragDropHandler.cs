@@ -25,7 +25,9 @@ public class DragDropHandler : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     /// Canvas group used to enable and disable interactions
     /// </summary>
     private CanvasGroup _canvasGroup;
-    
+
+    private ItemPresenter _itemPresenter;
+
     /// <summary>
     /// Initial drag position.
     /// </summary>
@@ -47,6 +49,7 @@ public class DragDropHandler : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     private void Awake()
     {
         _canvasGroup = GetComponent<CanvasGroup>();
+        _itemPresenter = GetComponent<ItemPresenter>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -85,6 +88,9 @@ public class DragDropHandler : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     {
         ItemAnimator.SetBool(IsDragging, true);
         ItemAnimator.SetBool(IsNew, false);
+        
+        _itemPresenter.Item.New = false;
+        _itemPresenter.UpdateBadge();
     }
 
     private void StopDraggingAnimation()

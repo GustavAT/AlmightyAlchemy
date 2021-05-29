@@ -51,6 +51,7 @@ public class Inventory : MonoBehaviour
         if (itemPresenter != null)
         {
             itemPresenter.Initialize(item);
+            itemPresenter.UpdateBadge();
         }
         
         // Start animation for new items
