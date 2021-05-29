@@ -24,8 +24,6 @@ public class Results : MonoBehaviour
 
     public void AddItems(List<Item> items)
     {
-        RemoveChildren();
-
         foreach (var item in items)
         {
             // Instantiate game object
@@ -38,7 +36,7 @@ public class Results : MonoBehaviour
         }
     }
 
-    private void RemoveChildren()
+    public void RemoveChildren()
     {
         Debug.Log("[Results] Remove items: " + transform.childCount);
         foreach (Transform child in ResultGrid.transform)
