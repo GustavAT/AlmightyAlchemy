@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbfd34662de11d04781de9be2bf0f851, type: 3}
+  m_Name: delicious-grilled-fish
+  m_EditorClassIdentifier: 
+  name: Delicious Grilled Fish
+  Quote: A gourmet at work.
+  Icon: {fileID: 21300000, guid: 6768a845330516748804ee6a611f9130, type: 3}
+  CustomColor: {r: 1, g: 0.2688679, b: 0.70315784, a: 1}
+  New: 0

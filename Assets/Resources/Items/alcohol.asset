@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: alcohol
   m_EditorClassIdentifier: 
   name: Alcohol
-  Quote: Will this solve my problems?
-  Icon: {fileID: 21300000, guid: 9993dd07044561c4fb0efcb9f2dd9779, type: 3}
-  CustomColor: {r: 1, g: 0.48584908, b: 0.93216056, a: 1}
-  New: 1
+  Quote: One drink away from telling everyone what I really think.
+  Icon: {fileID: 21300000, guid: b4a2f257fbd1ae849a265208e24fa17c, type: 3}
+  CustomColor: {r: 0.6650944, g: 0.9384494, b: 1, a: 1}
+  New: 0

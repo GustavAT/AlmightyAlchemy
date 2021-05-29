@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: air
   m_EditorClassIdentifier: 
   name: Air
-  Quote: Whoosh.
-  Icon: {fileID: 21300000, guid: 9993dd07044561c4fb0efcb9f2dd9779, type: 3}
+  Quote: Whoosh
+  Icon: {fileID: 21300000, guid: dffb7d3bcf3d98e488db2780451a0f3e, type: 3}
   CustomColor: {r: 0.8773585, g: 0.8773585, b: 0.8773585, a: 1}
   New: 0

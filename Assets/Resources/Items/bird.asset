@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: bird
   m_EditorClassIdentifier: 
   name: Bird
-  Quote: Skrrrt.
-  Icon: {fileID: 21300000, guid: 9993dd07044561c4fb0efcb9f2dd9779, type: 3}
-  CustomColor: {r: 1, g: 0.7981299, b: 0.3537736, a: 1}
+  Quote: Don't make it go angry!
+  Icon: {fileID: 21300000, guid: 1189a07a7d3c6554d907f467f2a4ddf9, type: 3}
+  CustomColor: {r: 1, g: 0.7122642, b: 0.7122642, a: 1}
   New: 0

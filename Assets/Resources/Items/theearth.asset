@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: theearth
   m_EditorClassIdentifier: 
   name: The Earth
-  Quote: It's big. It's blue. It looks like home.
-  Icon: {fileID: 21300000, guid: 9993dd07044561c4fb0efcb9f2dd9779, type: 3}
+  Quote: This hits close to home!
+  Icon: {fileID: 21300000, guid: c1ea2aa68eead42468a5f73d447802de, type: 3}
   CustomColor: {r: 0.3820755, g: 1, b: 0.8605436, a: 1}
   New: 0

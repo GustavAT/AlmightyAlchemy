@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Vegetable
   Quote: Always eat them, kids.
-  Icon: {fileID: 21300000, guid: 9993dd07044561c4fb0efcb9f2dd9779, type: 3}
+  Icon: {fileID: 21300000, guid: fdcb972327b75fe4991160ce762a0efd, type: 3}
   CustomColor: {r: 0.3588616, g: 0.6603774, b: 0.33953366, a: 1}
   New: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: wings
   m_EditorClassIdentifier: 
   name: Wings
-  Quote: Very useful for flying.
-  Icon: {fileID: 21300000, guid: 9993dd07044561c4fb0efcb9f2dd9779, type: 3}
-  CustomColor: {r: 1, g: 1, b: 1, a: 1}
+  Quote: I believe i can fly.
+  Icon: {fileID: 21300000, guid: 20a600db3911e624ba25308d029cf22f, type: 3}
+  CustomColor: {r: 0.9505699, g: 1, b: 0.5613208, a: 1}
   New: 0

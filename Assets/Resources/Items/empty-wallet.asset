@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbfd34662de11d04781de9be2bf0f851, type: 3}
-  m_Name: flowers
+  m_Name: empty-wallet
   m_EditorClassIdentifier: 
-  name: Flowers
-  Quote: They are colorful and smell great.
-  Icon: {fileID: 21300000, guid: 9993dd07044561c4fb0efcb9f2dd9779, type: 3}
-  CustomColor: {r: 0.9811321, g: 0.47668213, b: 0.8714976, a: 1}
+  name: Empty Wallet
+  Quote: Broke AF
+  Icon: {fileID: 21300000, guid: f9179837e4232bd45992c0c5f2cafb3c, type: 3}
+  CustomColor: {r: 0.4575472, g: 0.59124887, b: 1, a: 1}
   New: 0
