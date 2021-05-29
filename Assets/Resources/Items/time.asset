@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: time
   m_EditorClassIdentifier: 
   name: Time
-  Icon: {fileID: 21300000, guid: e3b4daa14afce134bb0358e70a558246, type: 3}
-  CustomColor: {r: 1, g: 0.40536502, b: 0, a: 1}
+  Quote: 
+  Icon: {fileID: 21300000, guid: 560cb303b8fcae648952a94f66bc1b4f, type: 3}
+  CustomColor: {r: 1, g: 0.66279554, b: 0, a: 1}
+  New: 0
