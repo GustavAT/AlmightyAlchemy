@@ -12,6 +12,11 @@ public class DragDropHandler : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     public static GameObject GetItemBeingDragged() => _itemBeingDragged;
 
     /// <summary>
+    /// The item's animator
+    /// </summary>
+    public Animator ItemAnimator;
+
+    /// <summary>
     /// Element covering the entire UI canvas
     /// </summary>
     private Transform _globalDragParent;
@@ -30,6 +35,9 @@ public class DragDropHandler : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     /// The grid
     /// </summary>
     private Transform _startParent;
+
+    private static readonly int IsDragging = Animator.StringToHash("IsDragging");
+    private static readonly int IsNew = Animator.StringToHash("IsNew");
 
     private void Start()
     {
@@ -51,6 +59,8 @@ public class DragDropHandler : MonoBehaviour, IBeginDragHandler, IEndDragHandler
         _canvasGroup.alpha = 0.8f;
         
         transform.SetParent(_globalDragParent);
+        
+        StartDraggingAnimation();
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -67,5 +77,23 @@ public class DragDropHandler : MonoBehaviour, IBeginDragHandler, IEndDragHandler
         _canvasGroup.alpha = 1f;
         
         transform.SetParent(_startParent);
+        
+        StopDraggingAnimation();
+    }
+
+    private void StartDraggingAnimation()
+    {
+        ItemAnimator.SetBool(IsDragging, true);
+        ItemAnimator.SetBool(IsNew, false);
+    }
+
+    private void StopDraggingAnimation()
+    {
+        ItemAnimator.SetBool(IsDragging, false);
+    }
+
+    public void StartIsNewAnimation()
+    {
+        ItemAnimator.SetBool(IsNew, true);
     }
 }

@@ -702,6 +702,8 @@ GameObject:
   - component: {fileID: 547038144}
   - component: {fileID: 547038143}
   - component: {fileID: 547038145}
+  - component: {fileID: 547038147}
+  - component: {fileID: 547038146}
   m_Layer: 5
   m_Name: Discovery
   m_TagString: Untagged
@@ -785,6 +787,38 @@ MonoBehaviour:
   Icon: {fileID: 1309540714}
   Name: {fileID: 1968356194}
   Quote: {fileID: 1999764252}
+--- !u!95 &547038146
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547038141}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0b738b4d9db102d448807146ad4079d2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &547038147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547038141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 1
 --- !u!1 &578069776
 GameObject:
   m_ObjectHideFlags: 0
@@ -1625,7 +1659,6 @@ MonoBehaviour:
   ItemPrefab: {fileID: 3235110068665120702, guid: 6a52ec0a256ba3d4891eaf518c137052, type: 3}
   InventoryGrid: {fileID: 998254287}
   StartItems:
-  - {fileID: 11400000, guid: b40ffa92d636ed74bb85c947705158f0, type: 2}
   - {fileID: 11400000, guid: 7eefa02b1eb33d34a8edd0024d1d1216, type: 2}
   AllItems: []
 --- !u!1001 &1237881791
@@ -2004,6 +2037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DiscoveryPanel: {fileID: 547038141}
+  DiscoveryAnimator: {fileID: 547038146}
 --- !u!4 &1439451288
 Transform:
   m_ObjectHideFlags: 0
@@ -2284,7 +2318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Content: {fileID: 963222666}
   m_Horizontal: 0
-  m_Vertical: 1
+  m_Vertical: 0
   m_MovementType: 1
   m_Elasticity: 0.1
   m_Inertia: 1

@@ -52,5 +52,15 @@ public class Inventory : MonoBehaviour
         {
             itemPresenter.Initialize(item);
         }
+        
+        // Start animation for new items
+        if (!isStartItem)
+        {
+            var dragHandler = itemGameObject.GetComponent<DragDropHandler>();
+            if (dragHandler != null)
+            {
+                dragHandler.StartIsNewAnimation();
+            }
+        }
     }
 }
