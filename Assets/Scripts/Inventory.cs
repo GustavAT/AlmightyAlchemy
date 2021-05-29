@@ -32,10 +32,17 @@ public class Inventory : MonoBehaviour
 
     private void Start()
     {
+        var loadedItems = SaveManager.LoadGame();
+        if (loadedItems.Count > 0)
+        {
+            StartItems = loadedItems;
+        }
+
         foreach (var startItem in StartItems)
         {
             AddItem(startItem, true);
         }
+        
     }
 
     public void AddItem(Item item, bool isStartItem)
