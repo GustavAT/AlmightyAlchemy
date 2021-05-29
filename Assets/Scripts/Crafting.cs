@@ -25,6 +25,9 @@ public class Crafting : MonoBehaviour
     /// </summary>
     private List<Recipe> Recipes;
 
+    public Animator GaugeAnimator;
+    private static readonly int TriggerGaugeSpinning = Animator.StringToHash("TriggerGaugeSpinning");
+
     public void Start()
     {
         Recipes = Resources.LoadAll<Recipe>("Recipes").ToList();
@@ -41,7 +44,10 @@ public class Crafting : MonoBehaviour
             Item2 = item;
         }
 
-        Craft();
+        Results.Instance.RemoveChildren();
+        GaugeAnimator.SetTrigger(TriggerGaugeSpinning);
+        
+        Invoke(nameof(Craft), 1f);
     }
 
     private void Craft()
