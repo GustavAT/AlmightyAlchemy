@@ -43,7 +43,12 @@ public class Crafting : MonoBehaviour
         {
             Item2 = item;
         }
-
+        
+        if (Item1 == null || Item2 == null)
+        {
+            return;
+        }
+        
         Results.Instance.RemoveChildren();
         GaugeAnimator.SetTrigger(TriggerGaugeSpinning);
         
@@ -52,11 +57,6 @@ public class Crafting : MonoBehaviour
 
     private void Craft()
     {
-        if (Item1 == null || Item2 == null)
-        {
-            return;
-        }
-
         var inventory = Inventory.Instance.AllItems;
         var matches = GetMatches();
 
