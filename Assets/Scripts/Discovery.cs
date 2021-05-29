@@ -59,6 +59,7 @@ public class Discovery : MonoBehaviour
     
     private void OpenPanel()
     {
+        SoundManager.Instance.playSuccess();
         DiscoveryPanel.SetActive(true);
         DiscoveryAnimator.SetTrigger(ShowDiscovery);
 

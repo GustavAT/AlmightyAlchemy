@@ -81,7 +81,19 @@ public class Crafting : MonoBehaviour
             Discovery.Instance.AddItem(newItem);
         }
         
-        Discovery.Instance.ShowNextDiscovery();
+       
+        if (newItems.Count > 0)
+        {
+             Discovery.Instance.ShowNextDiscovery();
+        }
+        else if (matches.Count > 0)
+        {
+            SoundManager.Instance.playAlreadyKnown();
+        }
+        else
+        {
+            SoundManager.Instance.playFailure();
+        }
     }
 
     private List<Item> GetMatches()
