@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Day
   Quote: It's a beautiful one.
-  Icon: {fileID: 21300000, guid: 9993dd07044561c4fb0efcb9f2dd9779, type: 3}
+  Icon: {fileID: 21300000, guid: 34e4d124235091f41a88a958bedd70ac, type: 3}
   CustomColor: {r: 0.5368903, g: 0.78981704, b: 0.8962264, a: 1}
   New: 0
