@@ -54,6 +54,13 @@ public class DragDropHandler : MonoBehaviour, IBeginDragHandler, IEndDragHandler
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        // Cancel dragging if an item is currently being crafted
+        if (Crafting.Instance.IsCrafting)
+        {
+            eventData.pointerDrag = null;
+            return;
+        }
+        
         _itemBeingDragged = gameObject;
         _startPosition = transform.position;
         _startParent = transform.parent;

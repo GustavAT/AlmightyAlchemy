@@ -19,6 +19,11 @@ public class Crafting : MonoBehaviour
     /// Second Item Slot
     /// </summary>
     public Item Item2;
+    
+    /// <summary>
+    /// Indicator if an item is currently crafted
+    /// </summary>
+    public bool IsCrafting;
 
     /// <summary>
     /// All Recipes
@@ -51,7 +56,8 @@ public class Crafting : MonoBehaviour
         
         Results.Instance.RemoveChildren();
         GaugeAnimator.SetTrigger(TriggerGaugeSpinning);
-        
+
+        IsCrafting = true;
         Invoke(nameof(Craft), 1f);
     }
 
@@ -94,6 +100,8 @@ public class Crafting : MonoBehaviour
         {
             SoundManager.Instance.playFailure();
         }
+
+        IsCrafting = false;
     }
 
     private List<Item> GetMatches()
