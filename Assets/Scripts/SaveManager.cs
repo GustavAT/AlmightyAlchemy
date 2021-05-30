@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SaveManager : MonoBehaviour
 {
@@ -84,5 +85,16 @@ public class SaveManager : MonoBehaviour
         }
 
         return loadedItems;
+    }
+
+    public static void WipeSaveGame()
+    {
+        string savePath = Application.persistentDataPath + "/gamesave.save";
+        if (File.Exists(savePath))
+        {
+            File.Delete(savePath);
+        }
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
