@@ -2570,6 +2570,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0055dbe51b671f9498ce6733dbadf79c, type: 2}
   - {fileID: 11400000, guid: 7eefa02b1eb33d34a8edd0024d1d1216, type: 2}
   - {fileID: 11400000, guid: a575dd4e323fa974d95a8ff13ae40ee3, type: 2}
+  - {fileID: 11400000, guid: d251516c9408b864694b1c4038893818, type: 2}
   AllItems: []
 --- !u!1001 &1237881791
 PrefabInstance:
