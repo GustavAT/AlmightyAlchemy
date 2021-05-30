@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8bce3eff8c91c34abec03a77a94eba1, type: 3}
-  m_Name: honay
+  m_Name: bee
   m_EditorClassIdentifier: 
   Inputs:
-  - Input1: {fileID: 11400000, guid: 9339abed467b902469045ad6618f60c8, type: 2}
-    Input2: {fileID: 11400000, guid: 232f823f110055545b0704af5f4332d5, type: 2}
-  Result: {fileID: 11400000, guid: f6dbf14bb9ac49e4e9299c5ae43ed892, type: 2}
+  - Input1: {fileID: 11400000, guid: 99532ae81bda28048ac4a18f5a4f660d, type: 2}
+    Input2: {fileID: 11400000, guid: 9339abed467b902469045ad6618f60c8, type: 2}
+  Result: {fileID: 11400000, guid: 232f823f110055545b0704af5f4332d5, type: 2}
