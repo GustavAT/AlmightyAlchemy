@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: scissors
   m_EditorClassIdentifier: 
   Inputs:
-  - Input1: {fileID: 0}
-    Input2: {fileID: 0}
+  - Input1: {fileID: 11400000, guid: 5c46844cc7d59a1439fecb51ffebd91c, type: 2}
+    Input2: {fileID: 11400000, guid: 5c46844cc7d59a1439fecb51ffebd91c, type: 2}
   Result: {fileID: 11400000, guid: b2c9936f6f85a4a49a49f9cd3ccc1b5d, type: 2}
