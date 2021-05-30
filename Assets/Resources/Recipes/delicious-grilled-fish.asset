@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8bce3eff8c91c34abec03a77a94eba1, type: 3}
+  m_Name: delicious-grilled-fish
+  m_EditorClassIdentifier: 
+  Inputs:
+  - Input1: {fileID: 11400000, guid: ac7ea8cd2bfc6af4487be14e3e6035c5, type: 2}
+    Input2: {fileID: 11400000, guid: e5ccc045bacace74694c7680101fec93, type: 2}
+  - Input1: {fileID: 11400000, guid: ac7ea8cd2bfc6af4487be14e3e6035c5, type: 2}
+    Input2: {fileID: 11400000, guid: 1bfef2643f9e2274ca7d06a463653a69, type: 2}
+  - Input1: {fileID: 11400000, guid: ac7ea8cd2bfc6af4487be14e3e6035c5, type: 2}
+    Input2: {fileID: 11400000, guid: ca7e0205e7a73394b9ebf369d47b704b, type: 2}
+  Result: {fileID: 11400000, guid: e1adf0f4d3dfe11488b9872684772c8f, type: 2}

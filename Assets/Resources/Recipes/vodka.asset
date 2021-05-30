@@ -13,9 +13,6 @@ MonoBehaviour:
   m_Name: vodka
   m_EditorClassIdentifier: 
   Inputs:
-  - Input1: {fileID: 11400000, guid: 0055dbe51b671f9498ce6733dbadf79c, type: 2}
-    Input2: {fileID: 11400000, guid: 3ae24b50851f86146a091dbb2a535fea, type: 2}
   - Input1: {fileID: 11400000, guid: 178c54d5a3ef67b47b3a58267fc0a8ac, type: 2}
     Input2: {fileID: 11400000, guid: 3ae24b50851f86146a091dbb2a535fea, type: 2}
-  Result:
-  - {fileID: 11400000, guid: 4bd50058b7d79774b89de31a6cb396fb, type: 2}
+  Result: {fileID: 11400000, guid: 4bd50058b7d79774b89de31a6cb396fb, type: 2}

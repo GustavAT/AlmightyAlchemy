@@ -10,12 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8bce3eff8c91c34abec03a77a94eba1, type: 3}
-  m_Name: moretime
+  m_Name: tree
   m_EditorClassIdentifier: 
   Inputs:
-  - Input1: {fileID: 11400000, guid: 7eefa02b1eb33d34a8edd0024d1d1216, type: 2}
+  - Input1: {fileID: 11400000, guid: a575dd4e323fa974d95a8ff13ae40ee3, type: 2}
     Input2: {fileID: 11400000, guid: 7eefa02b1eb33d34a8edd0024d1d1216, type: 2}
-  Result:
-  - {fileID: 11400000, guid: 7eefa02b1eb33d34a8edd0024d1d1216, type: 2}
-  - {fileID: 11400000, guid: d24623a4d966f2a4881f4ef05ee244de, type: 2}
-  - {fileID: 11400000, guid: b40ffa92d636ed74bb85c947705158f0, type: 2}
+  Result: {fileID: 11400000, guid: 3201f06fc6348bc4c9bfd9a078556029, type: 2}

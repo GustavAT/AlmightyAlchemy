@@ -10,13 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8bce3eff8c91c34abec03a77a94eba1, type: 3}
-  m_Name: grain_seeds
+  m_Name: grilled-fish
   m_EditorClassIdentifier: 
   Inputs:
-  - Input1: {fileID: 11400000, guid: a575dd4e323fa974d95a8ff13ae40ee3, type: 2}
+  - Input1: {fileID: 11400000, guid: 2dd22b6bf9b8ce6499794cef2fc92def, type: 2}
     Input2: {fileID: 11400000, guid: 1bfef2643f9e2274ca7d06a463653a69, type: 2}
-  - Input1: {fileID: 11400000, guid: 85138f49505481a4ca88a32b245e329d, type: 2}
-    Input2: {fileID: 11400000, guid: 1bfef2643f9e2274ca7d06a463653a69, type: 2}
-  Result:
-  - {fileID: 11400000, guid: 178c54d5a3ef67b47b3a58267fc0a8ac, type: 2}
-  - {fileID: 11400000, guid: 2b907b7bc0cdaf140bdf926875edee72, type: 2}
+  - Input1: {fileID: 11400000, guid: 2dd22b6bf9b8ce6499794cef2fc92def, type: 2}
+    Input2: {fileID: 11400000, guid: e5ccc045bacace74694c7680101fec93, type: 2}
+  Result: {fileID: 11400000, guid: ac7ea8cd2bfc6af4487be14e3e6035c5, type: 2}

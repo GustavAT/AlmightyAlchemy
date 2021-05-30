@@ -106,7 +106,7 @@ public class Crafting : MonoBehaviour
                 if (inputs.Input1 == Item1 && inputs.Input2 == Item2 ||
                     inputs.Input2 == Item1 && inputs.Input1 == Item2)
                 {
-                    crafted.AddRange(recipe.Result);
+                    crafted.Add(recipe.Result);
                 }
             }
         }

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8bce3eff8c91c34abec03a77a94eba1, type: 3}
+  m_Name: iron-ore
+  m_EditorClassIdentifier: 
+  Inputs:
+  - Input1: {fileID: 11400000, guid: d24623a4d966f2a4881f4ef05ee244de, type: 2}
+    Input2: {fileID: 11400000, guid: 67359862c154a2740909b584b59ee787, type: 2}
+  Result: {fileID: 11400000, guid: 86c78c6416056eb4583ef64d77696572, type: 2}

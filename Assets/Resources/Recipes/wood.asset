@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8bce3eff8c91c34abec03a77a94eba1, type: 3}
-  m_Name: day_n_nite
+  m_Name: wood
   m_EditorClassIdentifier: 
   Inputs:
-  - Input1: {fileID: 11400000, guid: 06f150e6c968b474694d7da450f62a93, type: 2}
-    Input2: {fileID: 11400000, guid: 7eefa02b1eb33d34a8edd0024d1d1216, type: 2}
-  Result:
-  - {fileID: 11400000, guid: b6b8ed879ad701e47ade343187ea517d, type: 2}
-  - {fileID: 11400000, guid: b54fd479afcbba04f96deecc1667a9ec, type: 2}
+  - Input1: {fileID: 11400000, guid: 71c7e0371ec42c6448d6f4ba97f94b1a, type: 2}
+    Input2: {fileID: 11400000, guid: 3201f06fc6348bc4c9bfd9a078556029, type: 2}
+  Result: {fileID: 11400000, guid: 2b2e4bc937b79a94ab2102f60d6db4eb, type: 2}

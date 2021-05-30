@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbfd34662de11d04781de9be2bf0f851, type: 3}
+  m_Name: loading
+  m_EditorClassIdentifier: 
+  name: Loading
+  Quote: Almost finished...
+  Icon: {fileID: 21300000, guid: 502e5110f3ee5b54c84dc202167e82e0, type: 3}
+  CustomColor: {r: 0.19406372, g: 0.8396226, b: 0.3622775, a: 1}
+  New: 0

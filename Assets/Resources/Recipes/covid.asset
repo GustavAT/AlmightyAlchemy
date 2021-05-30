@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8bce3eff8c91c34abec03a77a94eba1, type: 3}
+  m_Name: covid
+  m_EditorClassIdentifier: 
+  Inputs:
+  - Input1: {fileID: 11400000, guid: 1c16fe2cc66b24a4c99f391a76e5fe0b, type: 2}
+    Input2: {fileID: 11400000, guid: 346ef435d6d62ab4da7d5cf04ea16479, type: 2}
+  - Input1: {fileID: 11400000, guid: 72ee8022391fb1b45aa2faafb39d1006, type: 2}
+    Input2: {fileID: 11400000, guid: 346ef435d6d62ab4da7d5cf04ea16479, type: 2}
+  - Input1: {fileID: 11400000, guid: 58553f4a0e87e08489adb9c43cce32eb, type: 2}
+    Input2: {fileID: 11400000, guid: 762abb6cf862ad6468b4650a6e7ac60f, type: 2}
+  - Input1: {fileID: 11400000, guid: 58553f4a0e87e08489adb9c43cce32eb, type: 2}
+    Input2: {fileID: 11400000, guid: dca8bbbd0c31a19499c3d1f901689953, type: 2}
+  - Input1: {fileID: 11400000, guid: 58553f4a0e87e08489adb9c43cce32eb, type: 2}
+    Input2: {fileID: 11400000, guid: 72ee8022391fb1b45aa2faafb39d1006, type: 2}
+  - Input1: {fileID: 11400000, guid: 58553f4a0e87e08489adb9c43cce32eb, type: 2}
+    Input2: {fileID: 11400000, guid: 6d2d6c4bc30ae2647b345a161248c726, type: 2}
+  - Input1: {fileID: 11400000, guid: 58553f4a0e87e08489adb9c43cce32eb, type: 2}
+    Input2: {fileID: 11400000, guid: 1956ea92f929e8f4dbe9161bfeac68df, type: 2}
+  - Input1: {fileID: 11400000, guid: 58553f4a0e87e08489adb9c43cce32eb, type: 2}
+    Input2: {fileID: 11400000, guid: 1956ea92f929e8f4dbe9161bfeac68df, type: 2}
+  - Input1: {fileID: 11400000, guid: 58553f4a0e87e08489adb9c43cce32eb, type: 2}
+    Input2: {fileID: 11400000, guid: 71c7e0371ec42c6448d6f4ba97f94b1a, type: 2}
+  - Input1: {fileID: 11400000, guid: 58553f4a0e87e08489adb9c43cce32eb, type: 2}
+    Input2: {fileID: 11400000, guid: 60b8a40fd499c11439411fb316791379, type: 2}
+  Result: {fileID: 11400000, guid: 58553f4a0e87e08489adb9c43cce32eb, type: 2}

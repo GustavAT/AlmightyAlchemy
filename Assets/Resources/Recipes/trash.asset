@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8bce3eff8c91c34abec03a77a94eba1, type: 3}
+  m_Name: trash
+  m_EditorClassIdentifier: 
+  Inputs:
+  - Input1: {fileID: 11400000, guid: 85138f49505481a4ca88a32b245e329d, type: 2}
+    Input2: {fileID: 11400000, guid: 762abb6cf862ad6468b4650a6e7ac60f, type: 2}
+  - Input1: {fileID: 11400000, guid: 928453d1e6628c544afcd2a944d486fb, type: 2}
+    Input2: {fileID: 11400000, guid: 762abb6cf862ad6468b4650a6e7ac60f, type: 2}
+  Result: {fileID: 11400000, guid: afbda2bfd9f19bb4bba07a9a09549db7, type: 2}

@@ -15,5 +15,10 @@ MonoBehaviour:
   Inputs:
   - Input1: {fileID: 11400000, guid: 2dd22b6bf9b8ce6499794cef2fc92def, type: 2}
     Input2: {fileID: 11400000, guid: c1532b6d4eb3a5d418e4728b4ff9e50c, type: 2}
-  Result:
-  - {fileID: 11400000, guid: 99532ae81bda28048ac4a18f5a4f660d, type: 2}
+  - Input1: {fileID: 11400000, guid: 99532ae81bda28048ac4a18f5a4f660d, type: 2}
+    Input2: {fileID: 11400000, guid: 99532ae81bda28048ac4a18f5a4f660d, type: 2}
+  - Input1: {fileID: 11400000, guid: 6187ec29e3a5ab64eaa02021b33a655d, type: 2}
+    Input2: {fileID: 11400000, guid: 7eefa02b1eb33d34a8edd0024d1d1216, type: 2}
+  - Input1: {fileID: 11400000, guid: 6187ec29e3a5ab64eaa02021b33a655d, type: 2}
+    Input2: {fileID: 11400000, guid: 99532ae81bda28048ac4a18f5a4f660d, type: 2}
+  Result: {fileID: 11400000, guid: 99532ae81bda28048ac4a18f5a4f660d, type: 2}

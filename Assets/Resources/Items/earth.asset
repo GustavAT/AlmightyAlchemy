@@ -15,5 +15,5 @@ MonoBehaviour:
   name: Earth
   Quote: 
   Icon: {fileID: 21300000, guid: 1a3b906ff20cc8a45ac3e7670482dab0, type: 3}
-  CustomColor: {r: 1, g: 0.6570928, b: 0.1462264, a: 1}
+  CustomColor: {r: 0.19339621, g: 0.5227173, b: 1, a: 1}
   New: 0

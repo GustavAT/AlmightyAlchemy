@@ -8,7 +8,7 @@ public class Recipe : ScriptableObject
     [SerializeField]
     public ItemPair[] Inputs;
     [SerializeField]
-    public List<Item> Result;
+    public Item Result;
 
     [System.Serializable]
     public class ItemPair
