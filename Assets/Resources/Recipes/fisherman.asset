@@ -27,4 +27,6 @@ MonoBehaviour:
     Input2: {fileID: 11400000, guid: 71c7e0371ec42c6448d6f4ba97f94b1a, type: 2}
   - Input1: {fileID: 11400000, guid: 2dd22b6bf9b8ce6499794cef2fc92def, type: 2}
     Input2: {fileID: 11400000, guid: dca8bbbd0c31a19499c3d1f901689953, type: 2}
+  - Input1: {fileID: 11400000, guid: 928453d1e6628c544afcd2a944d486fb, type: 2}
+    Input2: {fileID: 11400000, guid: 762abb6cf862ad6468b4650a6e7ac60f, type: 2}
   Result: {fileID: 11400000, guid: 1956ea92f929e8f4dbe9161bfeac68df, type: 2}

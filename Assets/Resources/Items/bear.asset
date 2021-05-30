@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: bear
   m_EditorClassIdentifier: 
   name: Bear
-  Quote: I can't bear those jokes anymore.
+  Quote: I can't bear these jokes anymore.
   Icon: {fileID: 21300000, guid: d1a5f30ce21de5043a8f57a9d3f07aea, type: 3}
   CustomColor: {r: 0.9245283, g: 0.69439054, b: 0.37068352, a: 1}
   New: 0

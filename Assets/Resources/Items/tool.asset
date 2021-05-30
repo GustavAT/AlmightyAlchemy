@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: tool
   m_EditorClassIdentifier: 
   name: Tool
-  Quote: (made from wood and stone)
+  Quote: Let let stoneage begin.
   Icon: {fileID: 21300000, guid: 355002774aefc8a4c9cf73e3e9c44786, type: 3}
   CustomColor: {r: 0.8773585, g: 0.3517711, b: 0.3517711, a: 1}
   New: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: bee
   m_EditorClassIdentifier: 
   name: Bee
-  Quote: Bee the change you want to see the world!
+  Quote: Bee the change you want to see in the world!
   Icon: {fileID: 21300000, guid: 571b963aed3017e4dbd2962c1379bd13, type: 3}
   CustomColor: {r: 0.7934518, g: 1, b: 0.33490568, a: 1}
   New: 0
