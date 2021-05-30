@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Resources;
+using TMPro;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -19,6 +21,11 @@ public class Inventory : MonoBehaviour
     /// Grid
     /// </summary>
     public Transform InventoryGrid;
+
+    /// <summary>
+    /// Text element to count discovered items
+    /// </summary>
+    public TextMeshProUGUI ItemCounter;
     
     /// <summary>
     /// Start items to have in the inventory
@@ -30,8 +37,12 @@ public class Inventory : MonoBehaviour
     /// </summary>
     public List<Item> AllItems;
 
+    private int _maxItemCount;
+
     private void Start()
     {
+        InitializeMaxItemCounter();
+        
         var loadedItems = SaveManager.LoadGame();
         if (loadedItems.Count > 0)
         {
@@ -42,7 +53,6 @@ public class Inventory : MonoBehaviour
         {
             AddItem(startItem, true);
         }
-        
     }
 
     public void AddItem(Item item, bool isStartItem)
@@ -70,5 +80,18 @@ public class Inventory : MonoBehaviour
                 dragHandler.StartIsNewAnimation();
             }
         }
+        
+        UpdateCurrentItemCount();
+    }
+
+    private void InitializeMaxItemCounter()
+    {
+        _maxItemCount = Resources.LoadAll<Item>("Items").Length;
+        Debug.Log("[Inventory] Max item count " + _maxItemCount);
+    }
+    
+    private void UpdateCurrentItemCount()
+    {
+        ItemCounter.text = $"Discovered {AllItems.Count,2} / {_maxItemCount,2}";
     }
 }
